@@ -111,7 +111,7 @@ namespace GradeBook.GradeBooks
         {
             double grade = 0.0;
 
-            if (studentType == Enums.StudentType.Honors || studentType == Enums.StudentType.DualEnrolled)
+            if ((studentType.Equals(Enums.StudentType.Honors) || studentType.Equals(Enums.StudentType.DualEnrolled)) && IsWeighted == true)
                 grade += 1;
 
             switch (letterGrade)
