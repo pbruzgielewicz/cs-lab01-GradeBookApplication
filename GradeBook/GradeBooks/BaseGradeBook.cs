@@ -109,6 +109,7 @@ namespace GradeBook.GradeBooks
 
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
+
             switch (letterGrade)
             {
                 case 'A':
